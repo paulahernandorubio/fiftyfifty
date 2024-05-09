@@ -1,0 +1,276 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body {
+	font-family: "Montserrat", sans-serif;
+	font-style: normal;
+	overflow-x: hidden;
+}
+
+header {
+	width: 100%;
+	height: auto;
+	background-color: black;
+	display: flex;
+}
+
+#logotip {
+	width: 70%;
+	height: auto;
+	padding: 1.5% 1% 1% 1%;
+}
+#logotip img {
+	width: 18%;
+}
+
+nav {
+	width: 50%;
+	display: flex;
+}
+
+#menu {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: row;
+	list-style: none;
+	padding: 2vh;
+}
+
+.linkmenu {
+	width: auto;
+	margin: 3.2% 1%;
+	font-weight: bold;
+	font-size: 0.7rem;
+}
+
+.linkmenu a {
+	text-decoration: none;
+	color: yellow;
+	padding: 2vh;
+}
+
+.linkmenu a:hover {
+	text-decoration: line-through;
+	
+}
+
+/*<!--APARTAT VIDEO-->*/
+.gif {
+    width: 100%; 
+    height: auto;
+}
+
+/*APARTAT ABOUT*/
+#about-container {
+	width: 100%;
+	height: auto;
+	background-color: black;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	padding: 7%;
+	line-height: 134%;
+	margin-top: -1%;
+}
+
+#logotip2 {
+	width: 30%;
+	height: auto;
+	padding: 1% 1% 1% 1%;
+}
+
+#caixa-text{
+	margin-top: 11%;
+}
+
+#logotip2 img{
+	width: 70%;
+	margin: 0px 0px  20px  50px;
+}
+
+h2 {
+	font-size: 2rem;
+	font-weight: bold;
+	color: yellow;
+	text-align: center;
+}
+
+.textabout {
+	font-size: 1.2rem;
+	line-height: 134%;
+	width: 100%;
+	align-content: center;
+}
+
+.color-groc {
+    color: yellow;
+   }
+
+
+#boto-programacio {
+	text-decoration: none;
+	color: yellow;
+	border: 2px solid yellow;
+	font-size: 1rem;
+	font-weight: bold;
+	padding: 10px 30px;
+	cursor:`pointer;
+	/*z-index: -1;*/
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	position: absolute;
+	margin-top: 2%;
+	}
+	
+
+#boto1: hover, #boto1: active {
+	color: black;
+	background-color: yellow;
+	border: 3px solid yellow;
+	
+	}
+
+/*APARTAT CONTADOR*/
+#contador img {
+	width: 100%; 
+    height: auto;
+    padding: 0%;
+}
+	
+/*APARTAT INFO + rules*/
+#info-container {
+	width: 100%;
+	height: auto;
+	background-color: black;
+	color: yellow;
+	display: flex;
+	padding: 7% 2% 7% 2%;
+	flex-direction: row;
+	font-style: normal;
+	margin-top: -4px;
+}
+
+#foto2 {
+	width: 70%;
+	height: auto;
+	padding-left: 2%;
+}
+
+#foto2 img{
+	width: 100%;
+}
+
+#caixa-info {
+	width: 30%;
+	padding: 2%;
+	margin: 0% 0% 0% 5%;
+}
+
+h3 {
+	font-size: 1.5rem;
+	font-weight: normal;
+	padding-right: 2%;
+
+}
+
+
+.textinfo {
+	font-size: 1.2rem;
+	line-height: 134%;
+	color: white;
+	
+}
+
+#rules {
+border: 1px solid yellow;
+font-style: ;
+}
+
+#boto-rules {
+	color: black;
+	border: 3px black solid;
+	background-color: yellow;
+	text-decoration: none;
+	text-align: center;
+	font-size: 1.srem;
+	font-weight: normal;
+	padding: 10px 30px;
+}
+
+/*APARTAT PEU DE PÀGINA*/
+footer { 
+	background-color: yellow;
+	line-height:200%;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	text-decoration: none;
+
+}
+
+
+.footer-container {
+	display: flex;
+	text-decoration: none;
+
+}
+
+.columna {
+	flex: 1;
+	padding: 0 15px;
+	text-decoration: none;
+}
+
+.columna a {
+	text-decoration: none;
+	color: black;
+}
+
+.columna a:hover {
+	text-decoration: underline;
+}
+
+.titolets {
+font-weight: bold;
+}
+
+.xarxes {
+	width: 8%;
+	height: auto; 
+	display:inline;
+	margin-right: -10px;
+	padding: 30px 0px 0px 0px;
+}
+
+#boto-correu {
+	color: black;
+	border: 2px black solid;
+	text-decoration: none;
+	text-align: center;
+	font-size: 1.srem;
+	font-weight: normal;
+	padding: 10px 30px;
+}
+
+#boto-enviar {
+	color: yellow;
+	border: 3px black solid;
+	background-color: black;
+	text-decoration: none;
+	text-align: center;
+	font-size: 1.srem;
+	font-weight: normal;
+	padding: 10px 30px;
+}
+
+@media screen and (max-width: 768px) {
+	#menu{
+		flex-direction: column;
+		width: 100%;
+	}
+}

@@ -1,0 +1,217 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Montserrat", sans-serif;
+	font-style: normal;
+	overflow-x: hidden;
+	background-color: black;
+}
+
+
+/*APARTAT CAPÇALERA*/
+header {
+	width: 100%;
+	height: auto;
+	background-color: black;
+	display: flex;
+}
+
+#logotip {
+	width: 70%;
+	height: auto;
+	padding: 1.5% 1% 1% 1%;
+}
+#logotip img {
+	width: 18%;
+}
+
+nav {
+	width: 50%;
+	display: flex;
+}
+
+#menu {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: row;
+	list-style: none;
+	padding: 2vh;
+}
+
+.linkmenu {
+	width: auto;
+	margin: 3.2% 1%;
+	font-weight: bold;
+	font-size: 0.7rem;
+}
+
+.linkmenu a {
+	text-decoration: none;
+	color: yellow;
+	padding: 2vh;
+}
+
+.linkmenu a:hover {
+	text-decoration: line-through;
+}
+
+
+ /*APARTAT BARRA SLIDER*/
+
+ #slider {
+ 	background-color: yellow;
+ 	letter-spacing: 0.1em;
+ 	width: 8000px;
+	height: 4.5%;
+   font-family: "Bebas Neue", sans-serif;
+	display: flex;
+	position: absolute;
+	justify-content: space-evenly;
+	animation: slider 40s linear infinite;
+	align-items: center;
+ 	}
+
+
+ 	@keyframes slider {
+	0% {
+		position: absolute;
+		left: 0px;
+	}
+
+	100% {
+		position: absolute;
+		left: -5000px;
+	}
+}
+
+
+/*APARTAT INTRO*/
+
+.intro {
+	justify-content: center;
+	align-items: center;
+}
+
+p {
+text-align: center;
+color: white;
+padding:10% 0%;
+font-size: 1.2em
+}
+
+#boto1 {
+	text-decoration: none;
+	color: yellow;
+	border: 2px solid yellow;
+	font-weight: bold;
+	padding: 1% 1%;
+	cursor:`pointer;
+	font-size: 0.6em;
+
+	
+	}
+	
+
+#boto1:hover{
+	color: black;
+	background-color: yellow;
+	border: 2% solid yellow;
+	
+	}
+
+
+/*APARTAT GRUPS*/
+/*(error, un 2% demes al mitg, afegir divs per files)*/
+
+#grups {
+	width: 100vw;
+	height: auto;
+	/*background-color: black;*/
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.grup {
+	width: 50%;
+	height: auto;
+	padding-bottom: 10%;
+	padding: 2%;
+	position: relative;
+}
+
+
+.grup img {
+	width: 100%;
+	position: relative;
+}
+
+.grup img:hover {
+	border: 1px solid yellow;
+
+}
+
+.fotogran {
+	width: 100%;
+	height: auto;
+	padding: 2% 0.8% 2% 2%;
+}
+
+.fotogran img{
+	width: 100%;
+	height: auto;
+	justify-content: center;
+
+}
+
+.fotogran img:hover {
+	border: 1px solid yellow;
+	
+
+}
+
+.titolfoto {
+	width: 50%;
+	height: auto;
+	position: absolute;
+	color: white;
+	font-size: 1rem;
+	top: 50%;
+	left: 25%;
+	text-align: center;
+
+}
+
+.fotogran {
+	width: 100%;
+	height: auto;
+	padding-bottom: 10%;
+	padding: 2%;
+	position: relative;
+}
+
+
+.titolfotogran {
+	position: absolute;
+	top: 50%;
+	left: 40%;
+	color: white;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+	#menu{
+		flex-direction: column;
+		width: 100%;
+	}
+}
